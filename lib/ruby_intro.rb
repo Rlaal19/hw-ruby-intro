@@ -3,11 +3,18 @@
 # Part 1
 
 def sum arr
-  # YOUR CODE HERE
+  return arr.sum
 end
 
 def max_2_sum arr
-  # YOUR CODE HERE
+  if arr.length == 0
+    return 0
+  elsif arr.length ==1
+    return arr[0]
+  else
+    arr.sort!
+    return arr[arr.length-1] + arr[arr.length-2]
+  end
 end
 
 def sum_to_n? arr, n
