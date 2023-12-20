@@ -90,7 +90,7 @@ def initialize(isbn,price)
   end
 
   def price_as_string
-    return "$%0.2f" % [price]
+    return "$%0.2f" % [@price]
   end
 
 end
