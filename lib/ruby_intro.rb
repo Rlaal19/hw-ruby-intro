@@ -36,20 +36,49 @@ end
 
 # Part 2
 
-def hello(name)
-  # YOUR CODE HERE
+def hello (name)
+  return "Hello, #{name}"
 end
 
 def starts_with_consonant? s
-  # YOUR CODE HERE
+  a = "aeiouAEIOU"
+
+  if s.length == 0
+    return false
+  elsif s.length >= 1
+    if s[0].count("A-Za-z") == 1
+
+      if a.match(s[0])
+        return false
+      else
+        return true
+      end
+    end
+  end
 end
 
 def binary_multiple_of_4? s
-  # YOUR CODE HERE
+  if s.length == 0
+    return false
+  else
+    if s.count("A-Za-z") >= 1
+      return false
+    else
+      a = s.delete(" ")
+      if a.to_i % 4 == 0
+        return true
+      else
+        return false
+      end
+    end
+  end
+
 end
 
 # Part 3
 
 class BookInStock
-# YOUR CODE HERE
+# attr_accessor : isbn
+# attr_accessor : price
+
 end
